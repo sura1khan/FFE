@@ -39,11 +39,58 @@
             letter-spacing: 0;
             leading-trim: none;
         }
+
+        body {
+            margin: 0;
+          
+        }
+
+        .intro-screen {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            z-index: 50;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+
+        .intro-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .intro-text {
+            font-family: "Universal Sans Text Trial", Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            font-size: 46px;
+            line-height: 50px;
+            letter-spacing: 0;
+            color: #111111;
+            text-align: center;
+        }
+
+        .app-shell {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+
+        body.loaded .app-shell {
+            opacity: 1;
+            visibility: visible;
+        }
     </style>
 </head>
 
 <body class="w-[60%] mx-auto max-h-full justify-center">
-    <div class="min-h-screen p-5  md:p-2">
+    <div id="introScreen" class="intro-screen">
+        <div class="intro-text">Far From Ego</div>
+    </div>
+
+    <div id="appShell" class="app-shell min-h-screen p-5 md:p-2">
         <div class="mx-auto grid max-w-2xl gap-10 md:grid-cols-[20%_1fr] lg:gap-8">
             <aside class="md:sticky  md:self-start">
                 <div class="brand-mark mb-8 tracking-[0.45rem]">
@@ -409,8 +456,16 @@
             <span>©2015–2026</span>
         </footer>
     </div>
+    
 
     <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+                document.getElementById('introScreen').classList.add('hidden');
+                document.body.classList.add('loaded');
+            }, 1500);
+        });
+
         function showContent(contentId, clickedButton) {
             const contents = document.querySelectorAll('.content');
             contents.forEach(function(content) {
