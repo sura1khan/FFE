@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F F E</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Universal Sans Text Trial', 'Arial', 'Helvetica', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        @font-face {
+            font-family: "Universal Sans Text Trial";
+            src: local("Universal Sans Text Trial"), local("UniversalSansTextTrial"), local("Universal Sans");
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            font-family: "Universal Sans Text Trial", Arial, Helvetica, sans-serif;
+        }
+
+        .brand-mark {
+            font-family: "Universal Sans Text Trial", Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 46px;
+            line-height: 50px;
+            letter-spacing: 0;
+            leading-trim: none;
+        }
+    </style>
+</head>
+
+<body class="w-[60%] mx-auto max-h-full justify-center">
+    <div class="min-h-screen p-5  md:p-2">
+        <div class="mx-auto grid max-w-2xl gap-10 md:grid-cols-[20%_1fr] lg:gap-8">
+            <aside class="md:sticky  md:self-start">
+                <div class="brand-mark mb-8 tracking-[0.45rem]">
+                 <img src="FFE logo.png" alt="FFE Logo" class="w-[100px] h-auto">
+                </div>
+
+                <nav class="flex flex-col md:py-10 items-start">
+                    <button
+                        class="nav-button w-fit border-none bg-transparent p-0 text-left text-xl leading-relaxed text-neutral-800 transition-colors duration-200 hover:text-neutral-800 focus:outline-none"
+                        onclick="showContent('philosophy', this)">
+                        Philosophy
+                    </button>
+
+                    <button
+                        class="nav-button w-fit border-none bg-transparent p-0 text-left text-xl leading-relaxed text-neutral-800 transition-colors duration-200 hover:text-neutral-800 focus:outline-none"
+                        onclick="showContent('portfolio', this)">
+                        Portfolio
+                    </button>
+
+                    <button
+                        class="nav-button w-fit border-none bg-transparent p-0 text-left text-xl leading-relaxed text-neutral-800 transition-colors duration-200 hover:text-neutral-800 focus:outline-none"
+                        onclick="showContent('expertise', this)">
+                        Expertise
+                    </button>
+
+                    <button
+                        class="nav-button w-fit border-none bg-transparent p-0 text-left text-xl leading-relaxed text-neutral-800 transition-colors duration-200 hover:text-neutral-800 focus:outline-none"
+                        onclick="showContent('history', this)">
+                        History
+                    </button>
+
+                    <button
+                        class="nav-button w-fit border-none bg-transparent p-0 text-left text-xl leading-relaxed text-neutral-800 transition-colors duration-200 hover:text-neutral-800 focus:outline-none"
+                        onclick="showContent('company', this)">
+                        Company
+                    </button>
+                </nav>
+            </aside>
+
+            <main class="min-h-[600px] bg-white">
+                <div class="mb-8 -mt-1 flex items-center gap-6">
+                    <div id="contentTitle" class="text-xl font-normal text-neutral-800">
+                        Philosophy
+                    </div>
+                </div>
+
+                <section id="philosophy" class="content block max-w-[520px] text-xl leading-5 text-neutral-800">
+                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                        <h3>1.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                        <h3>2.</h3>     
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                        <h3>3.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                        <h3>4.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium doloremque laudantium.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                        <h3>5.</h3> 
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium doloremque laudantium.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                        <h3>6.</h3> 
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium doloremque laudantium.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                        <h3>7.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium doloremque laudantium.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                        <h3>8.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium doloremque laudantium.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="portfolio" class="content hidden max-w-[520px] text-xl leading-5 text-neutral-800">
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <h3 class="mb-2 md:mb-4">Ravi Collected</h3>
+                        <p>
+                            R&W Collected creates furniture, lighting, artworks and objects of design.
+                            Their work combines thoughtful design with practical functionality.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <h3 class="mb-2 md:mb-4">Undo Developments</h3>
+                        <p>
+                            Undo is a new breed of development company with a humanistic approach to architecture and design.
+                            Their projects focus on creating meaningful spaces.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <h3 class="mb-2 md:mb-5">Revive</h3>
+                        <p>
+                            Revive is a real estate developer specializing in transformation of existing properties through thoughtful
+                            renovation and marketing.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <h3 class="mb-2 md:mb-4">House of Delo</h3>
+                        <p>
+                            The house is traditional in Kashan turned into a contemporary residence. Restored carefully with
+                            consideration for the existing structure.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <h3 class="mb-2 md:mb-4">Mercury Escapodes</h3>
+                        <p ">
+                            Mercury Escapodes is a travel agency specializing in unusual and thoughtful travel experiences.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <h3 class="mb-2 md:mb-4">Flome Tree Capitol</h3>
+                        <p >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed do eiusmod tempor incididunt ut labore et dolore.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="expertise" class="content hidden max-w-[520px] text-xl leading-5 text-neutral-800">
+
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <h3 class="mb-2 md:mb-4">Private Equity</h3>
+                        <p> consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua. Ut enim 
+                            ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit
+                            in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.Undo is a new breed of development company
+                            with a humanistic approach to architecture and design.
+                            Their projects focus on creating meaningful spaces.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <h3 class="mb-2 md:mb-5">Venture Capital</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                             ed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <h3 class="mb-2 md:mb-4">Alternative Investments</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        isi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <h3 class="mb-2 md:mb-4">Estates & Wealth Planning</h3>
+                        <p ">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                            irure dolor in reprehenderit in voluptate velit esse cillum 
+                            dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <h3 class="mb-2 md:mb-4">Foundations & Philanthropy</h3>
+                        <p >
+                            Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. 
+                        </p>
+                    </div>
+                </section>
+
+                <section id="history" class="content hidden max-w-[520px] text-xl leading-5 text-neutral-800">
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                        Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                        In id cursus mi pretium tellus duis convallis. Tempus leo
+                        eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
+                        acus nec metus bibendum egestas. Iaculis massa nisl malesuada
+                        lacinia integer nunc posuere. Ut hendrerit semper vel class
+                        aptent taciti sociosqu. 
+                        Ad litora torquent per conubia nostra inceptos himenaeos.
+                        </p>
+                    </div>
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                        Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                        In id cursus mi pretium tellus duis convallis. Tempus leo
+                        eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
+                        acus nec metus bibendum egestas. Iaculis massa nisl malesuada
+                        lacinia integer nunc posuere. Ut hendrerit semper vel class
+                        aptent taciti sociosqu. 
+                        Ad litora torquent per conubia nostra inceptos himenaeos.
+                        </p>
+                    </div>
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                        Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                        In id cursus mi pretium tellus duis convallis. Tempus leo
+                        eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
+                        acus nec metus bibendum egestas. Iaculis massa nisl malesuada
+                        lacinia integer nunc posuere. Ut hendrerit semper vel class
+                        aptent taciti sociosqu. 
+                        Ad litora torquent per conubia nostra inceptos himenaeos.
+                        </p>
+                    </div>
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                        Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                        In id cursus mi pretium tellus duis convallis. Tempus leo
+                        eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
+                        acus nec metus bibendum egestas. Iaculis massa nisl malesuada
+                        lacinia integer nunc posuere. Ut hendrerit semper vel class
+                        aptent taciti sociosqu. 
+                        Ad litora torquent per conubia nostra inceptos himenaeos.
+                        </p>
+                    </div>
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                        Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                        In id cursus mi pretium tellus duis convallis. Tempus leo
+                        eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
+                        acus nec metus bibendum egestas. Iaculis massa nisl malesuada
+                        lacinia integer nunc posuere. Ut hendrerit semper vel class
+                        aptent taciti sociosqu. 
+                        Ad litora torquent per conubia nostra inceptos himenaeos.
+                        </p>
+                    </div>
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                        Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                        In id cursus mi pretium tellus duis convallis. Tempus leo
+                        eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
+                        acus nec metus bibendum egestas. Iaculis massa nisl malesuada
+                        lacinia integer nunc posuere. Ut hendrerit semper vel class
+                        aptent taciti sociosqu. 
+                        Ad litora torquent per conubia nostra inceptos himenaeos.
+                        </p>
+                    </div>
+
+                  
+                </section>
+
+                <section id="company" class="content hidden max-w-[520px] text-xl leading-5 text-neutral-800">
+                    <div class="content-item mb-8 max-w-[650px]">
+                       <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                        Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                        In id cursus mi pretium tellus duis convallis. Tempus leo
+                        eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
+                        acus nec metus bibendum egestas. Iaculis massa nisl malesuada
+                        lacinia integer nunc posuere. Ut hendrerit semper vel class
+                        aptent taciti sociosqu. 
+                        Ad litora torquent per conubia nostra inceptos himenaeos.
+                        </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px]">
+                    <h3 class="mb-2 md:mb-4">Headquarters</h3>
+                    <p>
+                        123 Adam Smith Street
+                        Dubai, UAE       
+                    </p>
+                    </div>
+
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <h3 class="mb-2 ">Tel:</h3>
+                        <p >
+                            +971 4 123 4567
+                        </p>
+                    </div>
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <h3 class="mb-2 ">Email</h3>
+                        <p >
+                            info@farfromego.com
+                        </p>
+                    </div>
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <p >
+                            Instagram
+                        </p>
+                    </div>
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <p >
+                           LinkedIn
+                        </p>
+                    </div>
+                    <div class="content-item mb-8 max-w-[650px]">
+                        <p >
+                            Design & Art Direction:Kilgaard
+
+                        </p>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer class="w-full mx-auto mt-10  flex justify-center gap-5 text-md tracking-[0.15rem] text-zinc-400">
+            <a href="#" class="transition-colors duration-200 hover:text-neutral-700">Contact</a>
+            <a href="#" class="transition-colors duration-200 hover:text-neutral-700">Legal Information</a>
+            <a href="#" class="transition-colors duration-200 hover:text-neutral-700">Privacy Policy</a>
+            <span>©2015–2026</span>
+        </footer>
+    </div>
+
+    <script>
+        function showContent(contentId, clickedButton) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                const isVisible = content.id === contentId;
+                content.classList.toggle('hidden', !isVisible);
+                content.classList.toggle('block', isVisible);
+            });
+
+            const buttons = document.querySelectorAll('.nav-button');
+            buttons.forEach(function(button) {
+                const isActive = button === clickedButton;
+                button.classList.toggle('active', isActive);
+                button.classList.toggle('font-medium', isActive);
+                button.classList.toggle('text-neutral-500', isActive);
+                button.classList.toggle('text-neutral-800', !isActive);
+            });
+
+            document.getElementById('contentTitle').textContent = clickedButton.textContent.trim();
+        }
+    </script>
+</body>
+</html>
