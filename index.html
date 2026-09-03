@@ -22,7 +22,7 @@
             font-family: "Universal Sans Text Trial";
             src: local("Universal Sans Text Trial"), local("UniversalSansTextTrial"), local("Universal Sans");
             font-weight: 300;
-            font-style: normal;
+            font-style: 300;
             font-display: swap;
         }
 
@@ -33,11 +33,11 @@
         .brand-mark {
             font-family: "Universal Sans Text Trial", Arial, Helvetica, sans-serif;
             font-weight: 300;
-            font-style: normal;
-            font-size: 46px;
-            line-height: 50px;
-            letter-spacing: 0;
-            leading-trim: none;
+            font-style: 300;
+            font-size: 46px;     
+            line-height: 10px;
+            letter-spacing: 10;
+        
         }
 
         body {
@@ -85,186 +85,237 @@
     </style>
 </head>
 
-<body class="w-[60%] mx-auto max-h-full justify-center">
-    <div id="introScreen" class="intro-screen">
+<body class="w-full mx-auto max-h-screen  justify-center  text-neutral-800 bg-white">
+    <div id="introScreen" class="intro-screen cursor-pointer" role="button" tabindex="0" aria-label="Enter site">
         <div class="intro-text">Far From Ego</div>
     </div>
 
     <div id="appShell" class="app-shell min-h-screen p-5 md:p-2">
-        <div class="mx-auto grid max-w-2xl gap-10 md:grid-cols-[20%_1fr] lg:gap-8">
+        <div class="mx-left flex max-w-full gap-5 justify-left md:gap-[10%]">
             <aside class="md:sticky  md:self-start">
-                <div class="brand-mark mb-8 tracking-[0.45rem]">
-                 <img src="FFE logo.png" alt="FFE Logo" class="w-[100px] h-auto">
+                <div class="brand-mark pl-[14px] my-8 tracking-[0.45rem]">
+                 <img src="FFE logo.png" alt="FFE Logo" class="w-[200px] h-auto">
                 </div>
 
-                <nav class="flex flex-col md:py-10 items-start">
+                <nav class="flex flex-col text-4xl w-[266px] h-[313px] md:pt-[400px] pl-[14px] items-start">
                     <button
-                        class="nav-button w-fit border-none bg-transparent p-0 text-left text-xl leading-relaxed text-neutral-800 transition-colors duration-200 hover:text-neutral-800 focus:outline-none"
+                        class="nav-button w-fit border-none bg-transparent p-0 text-left  leading-1 text-neutral-800 transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
                         onclick="showContent('philosophy', this)">
                         Philosophy
                     </button>
 
                     <button
-                        class="nav-button w-fit border-none bg-transparent p-0 text-left text-xl leading-relaxed text-neutral-800 transition-colors duration-200 hover:text-neutral-800 focus:outline-none"
+                        class="nav-button w-fit border-none bg-transparent p-0 text-left  text-neutral-800 transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
                         onclick="showContent('portfolio', this)">
                         Portfolio
                     </button>
 
                     <button
-                        class="nav-button w-fit border-none bg-transparent p-0 text-left text-xl leading-relaxed text-neutral-800 transition-colors duration-200 hover:text-neutral-800 focus:outline-none"
+                        class="nav-button w-fit border-none bg-transparent p-0 text-left leading-1 text-neutral-800 transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
                         onclick="showContent('expertise', this)">
                         Expertise
                     </button>
 
                     <button
-                        class="nav-button w-fit border-none bg-transparent p-0 text-left text-xl leading-relaxed text-neutral-800 transition-colors duration-200 hover:text-neutral-800 focus:outline-none"
+                        class="nav-button w-fit border-none bg-transparent p-0 text-left text-neutral-800 transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
                         onclick="showContent('history', this)">
                         History
                     </button>
 
                     <button
-                        class="nav-button w-fit border-none bg-transparent p-0 text-left text-xl leading-relaxed text-neutral-800 transition-colors duration-200 hover:text-neutral-800 focus:outline-none"
+                        class="nav-button w-fit border-none bg-transparent p-0 text-left leading-1 text-neutral-800 transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
                         onclick="showContent('company', this)">
                         Company
                     </button>
                 </nav>
             </aside>
 
-            <main class="min-h-[600px] bg-white">
-                <div class="mb-8 -mt-1 flex items-center gap-6">
-                    <div id="contentTitle" class="text-xl font-normal text-neutral-800">
+            <main class=" bg-white ">
+                <div class="my-8 flex items-center">
+                    <div id="contentTitle" class="text-4xl font-normal text-neutral-800">
                         Philosophy
                     </div>
                 </div>
 
-                <section id="philosophy" class="content block max-w-[520px] text-xl leading-5 text-neutral-800">
-                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                <section id="philosophy" class="content w-[895px] p-5 block text-4xl leading-[1.3] text-neutral-800 mt-[15%]">
+                    <div class="content-item flex gap-2 ">
                         <h3>1.</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. 
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                    <div class="content-item flex gap-2 my-[25%] ">
                         <h3>2.</h3>     
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. 
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                    <div class="content-item my-[25%]  flex gap-2  ">
                         <h3>3.</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. 
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                    <div class="content-item my-[25%]  flex gap-2  ">
                         <h3>4.</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. 
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                    <div class="content-item my-[25%]  flex gap-2  ">
                         <h3>5.</h3> 
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. 
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                    <div class="content-item my-[25%]  flex gap-2  ">
                         <h3>6.</h3> 
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. 
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                    <div class="content-item my-[25%]  flex gap-2">
                         <h3>7.</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. 
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px] flex gap-2">
+                    <div class="content-item my-[25%]  flex gap-2 ">
                         <h3>8.</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. 
                         </p>
                     </div>
                 </section>
 
-                <section id="portfolio" class="content hidden max-w-[520px] text-xl leading-5 text-neutral-800">
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <h3 class="mb-2 md:mb-4">Ravi Collected</h3>
+                <section id="portfolio" class="content hidden w-[895px] p-5 block text-4xl leading-[1.3] text-neutral-800 mt-[15%]"> 
+                    <div class="content-item ">
+                        <h3 class="mb-2 md:mb-8">Ravi Collected</h3>
                         <p>
-                            R&W Collected creates furniture, lighting, artworks and objects of design.
-                            Their work combines thoughtful design with practical functionality.
+                            Ravi, Collected curates furniture, lighting, rugs, 
+                            artworks and objects of design value. Working with 
+                            leading global design brands as well as artists and
+                            craftspersons, Ravi Collected is a pioneer in creating
+                            interiors with soul and purpose.
+                            <span class=" transition-colors duration-200 hover:text-[#F90000] hover:underline focus:outline-none">
+                            ravicollected.com
+                        </span>
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <h3 class="mb-2 md:mb-4">Undo Developments</h3>
+                    <div class="content-item my-[25%]  ">
+                        <h3 class="mb-2 md:mb-8">Undo Developments</h3>
                         <p>
-                            Undo is a new breed of development company with a humanistic approach to architecture and design.
-                            Their projects focus on creating meaningful spaces.
+                            Undo is a new breed of development company with a
+                            humanistic approach to developing properties.
+                            Their mission is to create value through thoughtful
+                            design empowering customers to enhance their lives
+                            while maintaining a healthy return on their financial
+                            investment at the same time. Undo develops properties
+                            exclusively in rural areas and areas of 
+                            exceptional natural beauty. undodevelopments.com
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <h3 class="mb-2 md:mb-5">Revive</h3>
+                    <div class="content-item my-[25%]  ">
+                        <h3 class="mb-2 md:mb-8">Revive</h3>
                         <p>
-                            Revive is a real estate developer specializing in transformation of existing properties through thoughtful
-                            renovation and marketing.
+                            Revive is a real estate developer specialising in 
+                            transformation of existing properties. Through design,
+                            renovation, and marketing, Revive generates value for
+                            a wide ranging stakeholders including private 
+                            owners and investment funds.  revivedevelopments.com
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <h3 class="mb-2 md:mb-4">House of Delo</h3>
+                    <div class="content-item my-[25%]  ">
+                        <h3 class="mb-2 md:mb-8">House of Delo</h3>
                         <p>
-                            The house is traditional in Kashan turned into a contemporary residence. Restored carefully with
-                            consideration for the existing structure.
+                            The house is traditional estate in Kashan turned
+                            into a contemporary residence. Rooted deeply in
+                            an architectural history, the residence welcomes
+                            guests with understated, yet elegant rooms. 
+                            The house is a sanctuary in the midst of the
+                            Old Town, providing the guests with peaceful
+                            stay in the city as well as a base to explore 
+                            surrounding natural landscape houseofdela.com
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <h3 class="mb-2 md:mb-4">Mercury Escapodes</h3>
+                    <div class="content-item my-[25%]  ">
+                        <h3 class="mb-2 md:mb-8">Mercury Escapodes</h3>
                         <p ">
-                            Mercury Escapodes is a travel agency specializing in unusual and thoughtful travel experiences.
+                            Mercury Escapades is a travel agency specialising in 
+                            curating unique travel experiences. Unbound to geographical
+                            border a dedicated team of travel experts help travellers
+                            to experience otherworldly
+                            moments around the blue planet. mercuryescapades.com
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <h3 class="mb-2 md:mb-4">Flome Tree Capitol</h3>
+                    <div class="content-item my-[25%]  ">
+                        <h3 class="mb-2 md:mb-8">Flome Tree Capitol</h3>
                         <p >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Sed do eiusmod tempor incididunt ut labore et dolore.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                            eu fugiat nulla pariatur. studio8.studio
                         </p>
                     </div>
                 </section>
 
-                <section id="expertise" class="content hidden max-w-[520px] text-xl leading-5 text-neutral-800">
+                <section id="expertise" class="content hidden w-[895px] p-5 block text-4xl leading-[1.3] text-neutral-800 mt-[15%]">
 
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <h3 class="mb-2 md:mb-4">Private Equity</h3>
+                    <div class="content-item ">
+                        <h3 class="mb-2 md:mb-8">Private Equity</h3>
                         <p> consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut 
                             labore et dolore magna aliqua. Ut enim 
@@ -278,8 +329,8 @@
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <h3 class="mb-2 md:mb-5">Venture Capital</h3>
+                    <div class="content-item my-[25%] ">
+                        <h3 class="mb-2 md:mb-8">Venture Capital</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                              ed do eiusmod tempor incididunt ut labore et dolore magna 
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -289,8 +340,8 @@
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <h3 class="mb-2 md:mb-4">Alternative Investments</h3>
+                    <div class="content-item my-[25%]  ">
+                        <h3 class="mb-2 md:mb-8">Alternative Investments</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -300,8 +351,8 @@
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <h3 class="mb-2 md:mb-4">Estates & Wealth Planning</h3>
+                    <div class="content-item my-[25%]  ">
+                        <h3 class="mb-2 md:mb-8">Estates & Wealth Planning</h3>
                         <p ">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -311,8 +362,8 @@
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <h3 class="mb-2 md:mb-4">Foundations & Philanthropy</h3>
+                    <div class="content-item my-[25%]  ">
+                        <h3 class="mb-2 md:mb-8">Foundations & Philanthropy</h3>
                         <p >
                             Lorem ipsum dolor sit amet, 
                             consectetur adipiscing elit, sed do eiusmod tempor
@@ -325,8 +376,8 @@
                     </div>
                 </section>
 
-                <section id="history" class="content hidden max-w-[520px] text-xl leading-5 text-neutral-800">
-                    <div class="content-item mb-8 max-w-[650px]">
+                <section id="history" class="content hidden w-[895px] p-5 block text-4xl  text-neutral-800 mt-[15%]">
+                    <div class="content-item mb-8 flex gap-2">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
                         In id cursus mi pretium tellus duis convallis. Tempus leo
@@ -337,7 +388,7 @@
                         Ad litora torquent per conubia nostra inceptos himenaeos.
                         </p>
                     </div>
-                    <div class="content-item mb-8 max-w-[650px]">
+                    <div class="content-item mb-8 flex gap-2 my-[10%]">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
                         In id cursus mi pretium tellus duis convallis. Tempus leo
@@ -348,7 +399,7 @@
                         Ad litora torquent per conubia nostra inceptos himenaeos.
                         </p>
                     </div>
-                    <div class="content-item mb-8 max-w-[650px]">
+                    <div class="content-item mb-8 flex gap-2 my-[10%]">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
                         In id cursus mi pretium tellus duis convallis. Tempus leo
@@ -359,7 +410,7 @@
                         Ad litora torquent per conubia nostra inceptos himenaeos.
                         </p>
                     </div>
-                    <div class="content-item mb-8 max-w-[650px]">
+                    <div class="content-item mb-8 flex gap-2 my-[10%]">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
                         In id cursus mi pretium tellus duis convallis. Tempus leo
@@ -370,7 +421,7 @@
                         Ad litora torquent per conubia nostra inceptos himenaeos.
                         </p>
                     </div>
-                    <div class="content-item mb-8 max-w-[650px]">
+                    <div class="content-item mb-8 flex gap-2 my-[10%]">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
                         In id cursus mi pretium tellus duis convallis. Tempus leo
@@ -381,7 +432,7 @@
                         Ad litora torquent per conubia nostra inceptos himenaeos.
                         </p>
                     </div>
-                    <div class="content-item mb-8 max-w-[650px]">
+                    <div class="content-item mb-8 flex gap-2 my-[10%]">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
                         In id cursus mi pretium tellus duis convallis. Tempus leo
@@ -396,8 +447,8 @@
                   
                 </section>
 
-                <section id="company" class="content hidden max-w-[520px] text-xl leading-5 text-neutral-800">
-                    <div class="content-item mb-8 max-w-[650px]">
+                <section id="company" class="content hidden w-[895px] p-5 block text-4xl leading-[1.3] text-neutral-800 mt-[15%]">
+                    <div class="content-item mb-8 flex gap-2">
                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
                         In id cursus mi pretium tellus duis convallis. Tempus leo
@@ -409,7 +460,7 @@
                         </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px]">
+                    <div class="content-item my-[10%] flex gap-2">
                     <h3 class="mb-2 md:mb-4">Headquarters</h3>
                     <p>
                         123 Adam Smith Street
@@ -417,31 +468,32 @@
                     </p>
                     </div>
 
-                    <div class="content-item mb-8 max-w-[650px]">
+                    <div class="content-item my-[10%] ">
                         <h3 class="mb-2 ">Tel:</h3>
-                        <p >
+                        <p class=" transition-colors duration-200 hover:text-[#F90000] hover:underline focus:outline-none" >
                             +971 4 123 4567
                         </p>
                     </div>
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <h3 class="mb-2 ">Email</h3>
-                        <p >
+                    <div class="content-item my-[10%]">
+                        <h3 class="mb-2 ">Email:</h3>
+                        <p class=" transition-colors duration-200 hover:text-[#F90000] hover:underline focus:outline-none" >
                             info@farfromego.com
                         </p>
                     </div>
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <p >
+                    <div class="content-item my-[10%]">
+                        <p class=" transition-colors duration-200 hover:text-[#F90000] hover:underline focus:outline-none" >
                             Instagram
                         </p>
                     </div>
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <p >
+                    <div class="content-item my-[10%]">
+                        <p class=" transition-colors duration-200 hover:text-[#F90000] hover:underline focus:outline-none" >
                            LinkedIn
                         </p>
                     </div>
-                    <div class="content-item mb-8 max-w-[650px]">
-                        <p >
-                            Design & Art Direction:Kilgaard
+                    <div class="content-item my-[10%]">
+                        <h3 class="mb-2 "> Design & Art Direction:</h3>
+                        <p class=" transition-colors duration-200 hover:text-[#F90000] hover:underline focus:outline-none" >
+                           Kilgaard
 
                         </p>
                     </div>
@@ -449,20 +501,34 @@
             </main>
         </div>
 
-        <footer class="w-full mx-auto mt-10  flex justify-center gap-5 text-md tracking-[0.15rem] text-zinc-400">
-            <a href="#" class="transition-colors duration-200 hover:text-neutral-700">Contact</a>
-            <a href="#" class="transition-colors duration-200 hover:text-neutral-700">Legal Information</a>
-            <a href="#" class="transition-colors duration-200 hover:text-neutral-700">Privacy Policy</a>
+        <footer class="w-full mx-auto md:mt-[50%] flex justify-between gap-5 md:gap-10 text-2xl md:text-3xl leading-[1.3] tracking-[0.15rem] text-zinc-400">
+            <a href="#" class="transition-colors duration-200 hover:text-[#F90000]">Contact</a>
+            <a href="#" class="transition-colors duration-200 hover:text-[#F90000]">Legal Information</a>
+            <a href="#" class="transition-colors duration-200 hover:text-[#F90000]">Privacy Policy</a>
             <span>©2015–2026</span>
         </footer>
     </div>
     
 
-    <script>
+<script>
+        function revealContent() {
+            document.getElementById('introScreen').classList.add('hidden');
+            document.body.classList.add('loaded');
+        }
+
         window.addEventListener('DOMContentLoaded', function () {
+            const introScreen = document.getElementById('introScreen');
+
+            introScreen.addEventListener('click', revealContent);
+            introScreen.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    revealContent();
+                }
+            });
+
             setTimeout(function () {
-                document.getElementById('introScreen').classList.add('hidden');
-                document.body.classList.add('loaded');
+                revealContent();
             }, 1500);
         });
 
