@@ -7,43 +7,43 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Universal Sans Text Trial', 'Arial', 'Helvetica', 'sans-serif']
-                    }
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: [
+                        "Universal Sans",
+                        "Arial",
+                        "Helvetica",
+                        "sans-serif"
+                    ]
                 }
             }
-        };
+        }
+    };
     </script>
+
     <style>
-        @font-face {
-            font-family: "Universal Sans Text Trial";
-            src: local("Universal Sans Text Trial"), local("UniversalSansTextTrial"), local("Universal Sans");
-            font-weight: 300;
-            font-style: 300;
-            font-display: swap;
-        }
+    @font-face {
+    font-family: "Universal Sans";
+    src: url("/fonts/Universal-Sans-Display-450-Trial.ttf") format("truetype");
+    font-weight: 450;
+    font-style: normal;
+    font-display: swap;
+    }
 
-        body {
-            font-family: "Universal Sans Text Trial", Arial, Helvetica, sans-serif;
-        }
+    body {
+    margin: 0;
+    font-family: "Universal Sans", Arial, Helvetica, sans-serif;
+    }
 
-        .brand-mark {
-            font-family: "Universal Sans Text Trial", Arial, Helvetica, sans-serif;
-            font-weight: 300;
-            font-style: 300;
-            font-size: 46px;     
-            line-height: 10px;
-            letter-spacing: 10;
-        
-        }
-
-        body {
-            margin: 0;
-          
-        }
+    .font-universal {
+    font-family: "Universal Sans", Arial, Helvetica, sans-serif;
+    font-weight: 450;
+    font-size: 46px;
+    line-height: 50px;
+    letter-spacing: 0;
+    }
 
         .intro-screen {
             position: fixed;
@@ -63,8 +63,8 @@
         }
 
         .intro-text {
-            font-family: "Universal Sans Text Trial", Arial, Helvetica, sans-serif;
-            font-weight: 300;
+            font-family: "Universal Sans", Arial, Helvetica, sans-serif;
+            font-weight: 450;
             font-size: 46px;
             line-height: 50px;
             letter-spacing: 0;
@@ -85,45 +85,45 @@
     </style>
 </head>
 
-<body class="w-full mx-auto max-h-screen  justify-center  text-neutral-800 bg-white">
+<body class="w-full mx-auto max-h-screen  justify-center  text-neutral-800 bg-white font-universal">
     <div id="introScreen" class="intro-screen cursor-pointer" role="button" tabindex="0" aria-label="Enter site">
         <div class="intro-text">Far From Ego</div>
     </div>
 
     <div id="appShell" class="app-shell min-h-screen p-5 md:p-2">
-        <div class="mx-left flex max-w-full gap-5 justify-left md:gap-[10%]">
+        <div class="mx-left flex max-w-full gap-5 justify-left md:gap-[15%]">
             <aside class="md:sticky  md:self-start">
-                <div class="brand-mark pl-[14px] my-8 tracking-[0.45rem]">
+                <div class="brand-mark pl-[14px] my-6 tracking-[0.45rem]">
                  <img src="FFE logo.png" alt="FFE Logo" class="w-[200px] h-auto">
                 </div>
 
-                <nav class="flex flex-col text-4xl w-[266px] h-[313px] md:pt-[400px] pl-[14px] items-start">
+                <nav class="fixed flex flex-col w-[266px] h-[313px] md:pt-[200px] pl-[14px] items-start">
                     <button
-                        class="nav-button w-fit border-none bg-transparent p-0 text-left  leading-1 text-neutral-800 transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
+                        class="nav-button w-fit border-none bg-transparent text-left   text-[#000000] transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
                         onclick="showContent('philosophy', this)">
                         Philosophy
                     </button>
 
                     <button
-                        class="nav-button w-fit border-none bg-transparent p-0 text-left  text-neutral-800 transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
+                        class="nav-button w-fit border-none bg-transparent text-[#000000] transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
                         onclick="showContent('portfolio', this)">
                         Portfolio
                     </button>
 
                     <button
-                        class="nav-button w-fit border-none bg-transparent p-0 text-left leading-1 text-neutral-800 transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
+                        class="nav-button w-fit border-none bg-transparent text-left  text-[#000000] transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
                         onclick="showContent('expertise', this)">
                         Expertise
                     </button>
 
                     <button
-                        class="nav-button w-fit border-none bg-transparent p-0 text-left text-neutral-800 transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
+                        class="nav-button w-fit border-none bg-transparent text-left text-[#000000] transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
                         onclick="showContent('history', this)">
                         History
                     </button>
 
                     <button
-                        class="nav-button w-fit border-none bg-transparent p-0 text-left leading-1 text-neutral-800 transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
+                        class="nav-button w-fit border-none bg-transparent text-left  text-[#000000] transition-colors duration-200 hover:text-[#F90000] focus:outline-none"
                         onclick="showContent('company', this)">
                         Company
                     </button>
@@ -131,13 +131,13 @@
             </aside>
 
             <main class=" bg-white ">
-                <div class="my-8 flex items-center">
-                    <div id="contentTitle" class="text-4xl font-normal text-neutral-800">
+                <div class="my-4 flex items-center">
+                    <div id="contentTitle" class="text-neutral-800 ">
                         Philosophy
                     </div>
                 </div>
 
-                <section id="philosophy" class="content w-[895px] p-5 block text-4xl leading-[1.3] text-neutral-800 mt-[15%]">
+                <section id="philosophy" class="content w-[895px] p-5 block leading-[1.3] text-[#000000] mt-[15%]">
                     <div class="content-item flex gap-2 ">
                         <h3>1.</h3>
                         <p>
@@ -234,16 +234,16 @@
                     </div>
                 </section>
 
-                <section id="portfolio" class="content hidden w-[895px] p-5 block text-4xl leading-[1.3] text-neutral-800 mt-[15%]"> 
+                <section id="portfolio" class="content hidden w-[895px] p-5 block leading-[1.3] text-[#000000] mt-[15%]"> 
                     <div class="content-item ">
-                        <h3 class="mb-2 md:mb-8">Ravi Collected</h3>
+                        <h3 class="mb-2 md:mb-8 ">Ravi Collected</h3>
                         <p>
                             Ravi, Collected curates furniture, lighting, rugs, 
                             artworks and objects of design value. Working with 
                             leading global design brands as well as artists and
                             craftspersons, Ravi Collected is a pioneer in creating
                             interiors with soul and purpose.
-                            <span class=" transition-colors duration-200 hover:text-[#F90000] hover:underline focus:outline-none">
+                            <span class=" transition-colors duration-200 hover:text-[#F90000] underline focus:outline-none cursor-pointer">
                             ravicollected.com
                         </span>
                         </p>
@@ -312,7 +312,7 @@
                     </div>
                 </section>
 
-                <section id="expertise" class="content hidden w-[895px] p-5 block text-4xl leading-[1.3] text-neutral-800 mt-[15%]">
+                <section id="expertise" class="content hidden w-[895px] p-5 block leading-[1.3] text-[#000000] mt-[15%]">
 
                     <div class="content-item ">
                         <h3 class="mb-2 md:mb-8">Private Equity</h3>
@@ -376,8 +376,8 @@
                     </div>
                 </section>
 
-                <section id="history" class="content hidden w-[895px] p-5 block text-4xl  text-neutral-800 mt-[15%]">
-                    <div class="content-item mb-8 flex gap-2">
+                <section id="history" class="content hidden w-[895px] p-5 block  text-[#000000] mt-[15%]">
+                    <div class="content-item leading-[1.3] gap-12">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
                         In id cursus mi pretium tellus duis convallis. Tempus leo
@@ -388,7 +388,7 @@
                         Ad litora torquent per conubia nostra inceptos himenaeos.
                         </p>
                     </div>
-                    <div class="content-item mb-8 flex gap-2 my-[10%]">
+                    <div class="content-item leading-[1.3] my-[10%]">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
                         In id cursus mi pretium tellus duis convallis. Tempus leo
@@ -399,7 +399,7 @@
                         Ad litora torquent per conubia nostra inceptos himenaeos.
                         </p>
                     </div>
-                    <div class="content-item mb-8 flex gap-2 my-[10%]">
+                    <div class="content-item leading-[1.3] my-[10%]">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
                         In id cursus mi pretium tellus duis convallis. Tempus leo
@@ -410,7 +410,7 @@
                         Ad litora torquent per conubia nostra inceptos himenaeos.
                         </p>
                     </div>
-                    <div class="content-item mb-8 flex gap-2 my-[10%]">
+                    <div class="content-item leading-[1.3] my-[10%]">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
                         In id cursus mi pretium tellus duis convallis. Tempus leo
@@ -421,7 +421,7 @@
                         Ad litora torquent per conubia nostra inceptos himenaeos.
                         </p>
                     </div>
-                    <div class="content-item mb-8 flex gap-2 my-[10%]">
+                    <div class="content-item leading-[1.3] my-[10%]">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
                         In id cursus mi pretium tellus duis convallis. Tempus leo
@@ -432,7 +432,7 @@
                         Ad litora torquent per conubia nostra inceptos himenaeos.
                         </p>
                     </div>
-                    <div class="content-item mb-8 flex gap-2 my-[10%]">
+                    <div class="content-item leading-[1.3] my-[10%]">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
                         In id cursus mi pretium tellus duis convallis. Tempus leo
@@ -447,7 +447,7 @@
                   
                 </section>
 
-                <section id="company" class="content hidden w-[895px] p-5 block text-4xl leading-[1.3] text-neutral-800 mt-[15%]">
+                <section id="company" class="content hidden w-[895px] p-5 block leading-[1.3] text-[#000000] mt-[15%]">
                     <div class="content-item mb-8 flex gap-2">
                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Quisque faucibus ex sapien vitae pellentesque sem placerat.
@@ -460,39 +460,39 @@
                         </p>
                     </div>
 
-                    <div class="content-item my-[10%] flex gap-2">
-                    <h3 class="mb-2 md:mb-4">Headquarters</h3>
-                    <p>
-                        123 Adam Smith Street
+                    <div class="content-item my-[10%]">
+                    <h3 class="mb-2 md:mb-4">Headquarters:</h3>
+                    <p class="cursor-pointer">
+                        123 Adam Smith Street <br>
                         Dubai, UAE       
                     </p>
                     </div>
 
                     <div class="content-item my-[10%] ">
                         <h3 class="mb-2 ">Tel:</h3>
-                        <p class=" transition-colors duration-200 hover:text-[#F90000] hover:underline focus:outline-none" >
+                        <p class=" transition-colors duration-200 hover:text-[#F90000] focus:outline-none cursor-pointer" >
                             +971 4 123 4567
                         </p>
                     </div>
                     <div class="content-item my-[10%]">
                         <h3 class="mb-2 ">Email:</h3>
-                        <p class=" transition-colors duration-200 hover:text-[#F90000] hover:underline focus:outline-none" >
+                        <p class=" transition-colors duration-200 hover:text-[#F90000] underline focus:outline-none cursor-pointer" >
                             info@farfromego.com
                         </p>
                     </div>
                     <div class="content-item my-[10%]">
-                        <p class=" transition-colors duration-200 hover:text-[#F90000] hover:underline focus:outline-none" >
+                        <p class=" transition-colors duration-200 hover:text-[#F90000] underline focus:outline-none cursor-pointer" >
                             Instagram
                         </p>
                     </div>
                     <div class="content-item my-[10%]">
-                        <p class=" transition-colors duration-200 hover:text-[#F90000] hover:underline focus:outline-none" >
+                        <p class=" transition-colors duration-200 hover:text-[#F90000] underline focus:outline-none cursor-pointer" >
                            LinkedIn
                         </p>
                     </div>
                     <div class="content-item my-[10%]">
                         <h3 class="mb-2 "> Design & Art Direction:</h3>
-                        <p class=" transition-colors duration-200 hover:text-[#F90000] hover:underline focus:outline-none" >
+                        <p class=" transition-colors duration-200 hover:text-[#F90000] underline focus:outline-none cursor-pointer" >
                            Kilgaard
 
                         </p>
@@ -501,7 +501,7 @@
             </main>
         </div>
 
-        <footer class="w-full mx-auto md:mt-[50%] flex justify-between gap-5 md:gap-10 text-2xl md:text-3xl leading-[1.3] tracking-[0.15rem] text-zinc-400">
+        <footer class="w-full mx-auto md:mt-[10%] flex justify-between gap-5 md:gap-10  leading-[1.3] tracking-[0.15rem] text-zinc-400">
             <a href="#" class="transition-colors duration-200 hover:text-[#F90000]">Contact</a>
             <a href="#" class="transition-colors duration-200 hover:text-[#F90000]">Legal Information</a>
             <a href="#" class="transition-colors duration-200 hover:text-[#F90000]">Privacy Policy</a>
